@@ -26,6 +26,6 @@ int main()
 
 /*
 Solution approach :
-1. According to the problem statement, there is no need to take input from the user.
+1. According to the problem statement, there is no need to use conditions.
 2. Simply print the pattern using asterisk symbol.
 */
