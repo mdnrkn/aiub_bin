@@ -8,6 +8,7 @@ using namespace std;
 int main()
 {
     float a, b, c, d, e;
+    cout << "Enter 5 numbers : " << endl;
     cin >> a >> b >> c >> d >> e;
     float sum, avg;
     sum = a + b + c + d + e;
