@@ -2,7 +2,7 @@
 
 As-salamu alaykum / hello👋, 
 
-This repository contains the lab materials of the CSE department at American International University - Bangladesh (AIUB) from the Fall 2023-2024 semester to the present. It includes lab instructions, practice problems with their solutions, and other resources.
+This repository contains the lab materials (*coding related courses only) of the CSE department at American International University - Bangladesh (AIUB) from the Fall 2023-2024 semester to the present. It includes lab instructions, practice problems with their solutions, and other resources.
 
 ## Maintainer
 * Md. Nishat Raihan Khan Nijhum - [@mdnrkn](https://github.com/mdnrkn/)
