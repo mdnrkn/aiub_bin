@@ -21,6 +21,6 @@ int main()
 /*
 Solution approach :
 1. Take input from the user.
-2. Perform summation and average calculations.
-3. Print the results in separate lines.
+2. Calculate the summation and the average.
+3. Finally, print them.
 */
