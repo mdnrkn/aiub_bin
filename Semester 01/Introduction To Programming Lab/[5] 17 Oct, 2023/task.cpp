@@ -1,6 +1,6 @@
 /*
 Problem Statement :
-Write a C++ program to find prime numbers using array.  .
+Write a C++ program to find prime numbers using array.
 */
 
 #include <iostream>
