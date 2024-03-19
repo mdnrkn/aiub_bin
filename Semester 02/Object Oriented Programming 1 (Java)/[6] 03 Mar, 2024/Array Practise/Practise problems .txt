@@ -1,0 +1,13 @@
+Practise problems :
+Write program in Java to -
+
+1. Count a total number of duplicate elements in an array.
+2. Print all unique elements in an array.
+3. Merge three arrays of same size.
+4. Maximum and minimum element in an array.
+5. Sort elements of the array in ascending order & descending order.
+6. Insert element in an array.
+7. Delete element from an array.
+8. Find second smallest & second largest elements in a given array.
+9. Find even & odd element in an array.
+10. Find prime element in an array.
