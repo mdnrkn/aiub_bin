@@ -15,7 +15,7 @@ public class Book {
 		this.bookId = bookId;
 		this.bookType = bookType;
 		this.bookCopy = bookCopy;
-		Contact.bookCounter++;
+		this.bookCounter++;
 	}
 
 	public void showInfo() {
