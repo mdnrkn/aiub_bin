@@ -4,8 +4,7 @@ public class Transaction {
     private int amount;
     private String additionalInfo;
 
-    public Transaction() {
-    }
+    public Transaction() {}
 
     public Transaction(Account sender, Account receiver, int amount, String additionalInfo) {
         this.sender = sender;
