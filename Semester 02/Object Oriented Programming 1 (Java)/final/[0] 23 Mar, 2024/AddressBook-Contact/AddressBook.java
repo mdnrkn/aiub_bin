@@ -1,12 +1,10 @@
-// 6
 public class AddressBook {
   private String ownerName;
   private String info;
   private Contact[] listOfContact = new Contact[1000];
   private int totalContact;
 
-  AddressBook() {
-  }
+  AddressBook() {}
 
   AddressBook(String ownerName, String info) {
     this.ownerName = ownerName;
