@@ -1,4 +1,3 @@
-// 4
 public class Mobile {
     private String mobileOwnerName;
     private String mobileNumber;
