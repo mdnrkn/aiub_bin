@@ -1,12 +1,10 @@
-// 5
 public class Library {
   private String libName;
   private String libAddress;
   private Contact[] books = new Contact[9000];
   private int totalBook;
 
-  Library() {
-  }
+  Library() {}
 
   Library(String libName, String libAddress) {
     this.libName = libName;
