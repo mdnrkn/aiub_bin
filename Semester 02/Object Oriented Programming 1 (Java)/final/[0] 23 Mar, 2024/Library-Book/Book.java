@@ -1,4 +1,3 @@
-// 2 
 public class Book {
 	private String bookName;
 	private String bookAuthor;
@@ -8,7 +7,7 @@ public class Book {
 
 	static int bookCounter;
 
-	Book() {};
+	Book() {}
 
 	Book(String bookName, String bookAuthor, String bookId, String bookType, int bookCopy) {
 		this.bookName = bookName;
