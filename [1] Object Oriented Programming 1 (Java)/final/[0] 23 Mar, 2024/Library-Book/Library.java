@@ -1,7 +1,7 @@
 public class Library {
   private String libName;
   private String libAddress;
-  private Contact[] books = new Contact[9000];
+  private Book[] books = new Book[9000];
   private int totalBook;
 
   Library() {}
@@ -24,12 +24,12 @@ public class Library {
     }
   }
 
-  public void addNewBook(Contact book) {
+  public void addNewBook(Book book) {
     books[totalBook] = book;
     totalBook++;
   }
 
-  public void addNewBookCopy(Contact book, int copy) {
+  public void addNewBookCopy(Book book, int copy) {
     book.addBookCopy(copy);
   }
 }
