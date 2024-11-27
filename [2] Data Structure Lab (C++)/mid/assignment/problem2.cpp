@@ -1,3 +1,8 @@
+// Do the following to write program for binary search: 
+// Store some numbers in an array Apply a sorting algorithm to sort the array 
+// Print the sorted input array Input a searching number Apply searching using Binary Search algorithm 
+// Print the position if found otherwise print “Not found”
+
 #include <iostream>
 using namespace std;
 
