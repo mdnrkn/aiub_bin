@@ -1,3 +1,5 @@
+// Implement insertion sort and also print the number of comparisons and shifts used.
+
 #include <iostream>
 using namespace std;
 
