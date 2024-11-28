@@ -11,5 +11,5 @@ __Student Information :__ \
 Name : Md. Nishat Raihan Khan Nijhum \
 Student ID : 23-53208-3 \
 Department : B.Sc in Computer Science & Engineering \
-*(Fall 23 - Present)* \
+*(Sept 2023 - Sept 2027)* \
 Email : mdnishatraihankhan@gmail.com (personal)
