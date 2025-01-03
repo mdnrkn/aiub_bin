@@ -23,7 +23,7 @@ void pop()
 {
     if (!head)
     {
-        cout << "Linked List Empty" << endl;
+        cout << "Stack is Empty" << endl;
         return;
     }
 
