@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int prec(char ch) 
+int prec(char ch)
 {
     if (ch == '^') return 3;
     else if (ch == '/' || ch == '*') return 2;
@@ -9,12 +9,12 @@ int prec(char ch)
     else return -1;
 }
 
-void infixToPostfix(string s) 
+void infixToPostfix(string s)
 {
     stack<char> st;
     string result;
 
-    for (int i = 0; i < s.length(); i++) 
+    for (int i = 0; i < s.length(); i++)
     {
         char ch = s[i];
 
@@ -23,9 +23,9 @@ void infixToPostfix(string s)
 
         else if (ch == '(') st.push('(');
 
-        else if (ch == ')') 
+        else if (ch == ')')
         {
-            while (st.top() != '(') 
+            while (st.top() != '(')
             {
                 result += st.top();
                 st.pop();
@@ -33,9 +33,9 @@ void infixToPostfix(string s)
             st.pop();
         }
 
-        else 
+        else
         {
-            while (!st.empty() && prec(ch) <= prec(st.top())) 
+            while (!st.empty() && prec(ch) <= prec(st.top()))
             {
                 result += st.top();
                 st.pop();
@@ -44,7 +44,7 @@ void infixToPostfix(string s)
         }
     }
 
-    while (!st.empty()) 
+    while (!st.empty())
     {
         result += st.top();
         st.pop();
@@ -53,10 +53,10 @@ void infixToPostfix(string s)
     cout << result << endl;
 }
 
-int main() 
+int main()
 {
     string exp = "a+b-(c*d^e)";
     infixToPostfix(exp);
-    
+
     return 0;
 }
