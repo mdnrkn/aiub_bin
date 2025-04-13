@@ -8,9 +8,9 @@ namespace Appliance_Energy_Monitoring_System
 {
     public class Appliance
     {
-        private string applianceName;
-        private string brand;
-        private static double totalEnergyUsed;
+        protected string applianceName;
+        protected string brand;
+        protected static double totalEnergyUsed;
 
         public Appliance()
         {
