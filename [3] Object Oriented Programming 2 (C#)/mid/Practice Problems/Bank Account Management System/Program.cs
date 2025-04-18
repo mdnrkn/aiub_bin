@@ -25,7 +25,7 @@ namespace Bank_Account_Management_System
             Console.WriteLine();
 
             Console.WriteLine("Savings Account :");
-            SavingAccount s1 = new SavingAccount();
+            SavingsAccount s1 = new SavingAccount();
             s1.AccountNumber = 3;
             s1.HolderName = "Saving Account Holder 1";
             s1.Balance = 30000.0;
@@ -37,7 +37,7 @@ namespace Bank_Account_Management_System
             Console.WriteLine($"Total Accounts: {BankAccount.TotalAccounts()}");
             Console.WriteLine();
 
-            SavingAccount s2 = new SavingAccount(4, "Saving Account Holder 2", 1500.0, 10.0, 2000.0);
+            SavingsAccount s2 = new SavingAccount(4, "Saving Account Holder 2", 1500.0, 10.0, 2000.0);
             s2.ShowDetails();
             Console.WriteLine($"Annual Interest: {s2.CalculateAnnualInterest()}");
             Console.WriteLine($"Penalty Applicable: {s2.IsPenaltyApplicable()}");
