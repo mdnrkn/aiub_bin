@@ -43,7 +43,7 @@ namespace Bank_Account_Management_System
 
         public double CalculateAnnualInterest()
         {
-            return this.balance * interestRate;
+            return this.balance * this.interestRate;
         }
 
         public bool IsPenaltyApplicable()
