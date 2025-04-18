@@ -43,7 +43,7 @@ namespace Retail_Product_Management_System
 
         public bool IsEligibleForVIPReturn()
         {
-            if(warrantyYears >= 2)
+            if(this.warrantyYears >= 2)
             {
                 return true;
             }
@@ -55,11 +55,12 @@ namespace Retail_Product_Management_System
 
         public string ShowWarrantyInfo()
         {
-            return $"Warrenty: {this.WarrantyYears} years";
+            return $"Warrenty: {this.warrantyYears} years";
         }
+
         public string ShowWarrantyInfo(string note)
         {
-            return $"Warrenty: {this.WarrantyYears} years {note}";
+            return $"Warrenty: {this.warrantyYears} years {note}";
         }
     }
 }
