@@ -11,17 +11,6 @@ namespace Ticket_Booking_System
         private string coachType;
         private double fare;
 
-        public TrainTicket() : base()
-        {
-
-        }
-
-        public TrainTicket(int ticketId, string passengerName, string coachType, double fare) : base(ticketId, passengerName)
-        {
-            this.coachType = coachType;
-            this.fare = fare;
-        }
-
         public string CoachType
         {
             get { return this.coachType; }
@@ -32,6 +21,17 @@ namespace Ticket_Booking_System
         {
             get { return this.fare; }
             set { this.fare = value; }
+        }
+
+        public TrainTicket() : base()
+        {
+
+        }
+
+        public TrainTicket(int ticketId, string passengerName, string coachType, double fare) : base(ticketId, passengerName)
+        {
+            this.coachType = coachType;
+            this.fare = fare;
         }
 
         public void ShowDetails()

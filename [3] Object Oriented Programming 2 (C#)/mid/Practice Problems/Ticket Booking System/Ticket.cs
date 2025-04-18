@@ -12,18 +12,6 @@ namespace Ticket_Booking_System
         protected string passengerName;
         protected static int totalBookings = 0;
 
-        public Ticket()
-        {
-            totalBookings++;
-        }
-
-        public Ticket(int ticketId, string passengerName)
-        {
-            this.ticketId = ticketId;
-            this.passengerName = passengerName;
-            totalBookings++;
-        }
-
         public int TicketId
         {
             get { return this.ticketId; }
@@ -41,11 +29,24 @@ namespace Ticket_Booking_System
             return totalBookings;
         }
 
+        public Ticket()
+        {
+            totalBookings++;
+        }
+
+        public Ticket(int ticketId, string passengerName)
+        {
+            this.ticketId = ticketId;
+            this.passengerName = passengerName;
+            totalBookings++;
+        }
+
         public void ShowDetails()
         {
             Console.WriteLine("Ticket Information:");
             Console.WriteLine("Ticket ID: " + this.ticketId);
             Console.WriteLine("Passenger Name: " + this.passengerName);
+            Console.WriteLine("Total Bookings: " + totalBookings);
         }
     }
 }

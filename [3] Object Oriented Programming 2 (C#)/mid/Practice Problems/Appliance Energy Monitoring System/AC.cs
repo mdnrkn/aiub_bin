@@ -34,7 +34,7 @@ namespace Appliance_Energy_Monitoring_System
             this.StarRating = starRating;
         }
 
-        public void ShowDetails()
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine($"Btu: " + this.btu);

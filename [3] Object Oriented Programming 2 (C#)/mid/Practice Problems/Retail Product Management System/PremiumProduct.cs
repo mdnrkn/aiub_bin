@@ -6,21 +6,10 @@ using System.Threading.Tasks;
 
 namespace Retail_Product_Management_System
 {
-    public class PremiumProduct:Product
+    public class PremiumProduct : Product
     {
         private int warrantyYears;
         private string countryOfOrigin;
-
-        public PremiumProduct():base()
-        {
-
-        }
-
-        public PremiumProduct(int productId, string name, double price, int warrantyYears, string countryOfOrigin):base(productId, name, price)
-        {
-            this.warrantyYears = warrantyYears;
-            this.countryOfOrigin = countryOfOrigin;
-        }
 
         public int WarrantyYears
         {
@@ -34,7 +23,18 @@ namespace Retail_Product_Management_System
             set { this.countryOfOrigin = value; }
         }
 
-        public void ShowDetails()
+        public PremiumProduct() : base()
+        {
+
+        }
+
+        public PremiumProduct(int productId, string name, double price, int warrantyYears, string countryOfOrigin) : base(productId, name, price)
+        {
+            this.warrantyYears = warrantyYears;
+            this.countryOfOrigin = countryOfOrigin;
+        }
+
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Warranty Years: " + this.warrantyYears);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Account_Management_System
 {
-    public class CurrentAccount:BankAccount
+    public class CurrentAccount : BankAccount
     {
         private double overdraftLimit;
         private double transactionFee;
@@ -34,7 +34,7 @@ namespace Bank_Account_Management_System
             set { this.transactionFee = value; }
         }
 
-        public void ShowDetail()
+        public override void ShowDetail()
         {
             base.ShowDetails();
             Console.WriteLine("Overdraft Limit: " + this.overdraftLimit);

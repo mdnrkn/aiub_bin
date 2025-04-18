@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Bank_Account_Management_System
 {
-    public class SavingAccount:BankAccount
+    public class SavingAccount : BankAccount
     {
         private double interestRate;
         private double minimumBalance;
@@ -34,7 +34,7 @@ namespace Bank_Account_Management_System
             set { this.minimumBalance = value; }
         }
 
-        public void ShowDetails()
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Interest Rate: " + this.interestRate);

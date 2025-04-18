@@ -16,12 +16,10 @@ namespace Retail_Product_Management_System
             p1.Name = "First Product";
             p1.Price = 100.0;
             p1.ShowDetails();
-            Console.WriteLine($"VAT Rate: {Product.VatRate()}");
             Console.WriteLine();
 
             Product p2 = new Product(2, "Second Product", 150.0);
             p2.ShowDetails();
-            Console.WriteLine($"VAT Rate: {Product.VatRate()}");
             Console.WriteLine();
 
             Console.WriteLine("Discounted Product :");
@@ -60,7 +58,6 @@ namespace Retail_Product_Management_System
             Console.WriteLine($"VIP Return Eligible: {pp2.IsEligibleForVIPReturn()}");
             Console.WriteLine(pp2.ShowWarrantyInfo());
             Console.WriteLine(pp2.ShowWarrantyInfo("(Extended Coverage)"));
-
         }
     }
 }

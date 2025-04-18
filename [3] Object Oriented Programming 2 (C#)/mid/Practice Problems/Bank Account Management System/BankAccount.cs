@@ -44,12 +44,13 @@ namespace Bank_Account_Management_System
             set { this.balance = value; }
         }
 
-        public void ShowDetails()
+        public virtual void ShowDetails()
         {
             Console.WriteLine("Account Information:");
             Console.WriteLine("Account Number: " + this.accountNumber);
             Console.WriteLine("Holder Name: " + this.holderName);
             Console.WriteLine("Balance: " + this.balance);
+            Console.WriteLine("Total Accounts: " + totalAccounts);
         }
 
         public static int TotalAccounts()

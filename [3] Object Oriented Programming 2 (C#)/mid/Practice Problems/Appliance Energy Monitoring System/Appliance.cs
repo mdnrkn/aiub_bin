@@ -12,17 +12,6 @@ namespace Appliance_Energy_Monitoring_System
         protected string brand;
         protected static double totalEnergyUsed;
 
-        public Appliance()
-        {
-
-        }
-
-        public Appliance(string applianceName, string brand)
-        {
-            this.applianceName = applianceName;
-            this.brand = brand;
-        }
-
         public string ApplianceName
         {
             get { return applianceName; }
@@ -41,7 +30,18 @@ namespace Appliance_Energy_Monitoring_System
             set { totalEnergyUsed = value; }
         }
 
-        public void ShowDetails()
+        public Appliance()
+        {
+
+        }
+
+        public Appliance(string applianceName, string brand)
+        {
+            this.applianceName = applianceName;
+            this.brand = brand;
+        }
+
+        public virtual void ShowDetails()
         {
             Console.WriteLine("Appliance Information : ");
             Console.WriteLine("Appliance: " + this.applianceName);

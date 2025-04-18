@@ -13,18 +13,6 @@ namespace Retail_Product_Management_System
         protected double price;
         protected static double vatRate = 0.1;
 
-        public Product()
-        {
-
-        }
-
-        public Product(int productId, string name, double price)
-        {
-            this.productId = productId;
-            this.name = name;
-            this.price = price;
-        }
-
         public int ProductId
         {
             get { return this.productId; }
@@ -48,11 +36,24 @@ namespace Retail_Product_Management_System
             return vatRate;
         }
 
-        public void ShowDetails()
+        public Product()
+        {
+
+        }
+
+        public Product(int productId, string name, double price)
+        {
+            this.productId = productId;
+            this.name = name;
+            this.price = price;
+        }
+
+        public virtual void ShowDetails()
         {
             Console.WriteLine("Product Id: " + this.productId);
             Console.WriteLine("Name: " + this.name);
             Console.WriteLine("Price: " + this.price);
+            Console.WriteLine("Vat Rate: " + vatRate);
         }
     }
 }

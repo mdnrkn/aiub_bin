@@ -11,16 +11,6 @@ namespace Shape_Drawing_System
         private double radius;
         private string color;
 
-        public Circle() : base()
-        {
-        }
-
-        public Circle(string shapeName, string shapeType, double radius, string color) : base(shapeName, shapeType)
-        {
-            this.radius = radius;
-            this.color = color;
-        }
-
         public double Radius
         {
             get { return this.radius; }
@@ -33,7 +23,18 @@ namespace Shape_Drawing_System
             set { this.color = value; }
         }
 
-        public void ShowDetails()
+        public Circle() : base()
+        {
+
+        }
+
+        public Circle(string shapeName, string shapeType, double radius, string color) : base(shapeName, shapeType)
+        {
+            this.radius = radius;
+            this.color = color;
+        }
+
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Radius: " + this.radius);

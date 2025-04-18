@@ -12,18 +12,6 @@ namespace Shape_Drawing_System
         protected string shapeType;
         protected static int totalShapes = 0;
 
-        public Shape()
-        {
-            totalShapes++;
-        }
-
-        public Shape(string shapeName, string shapeType)
-        {
-            this.shapeName = shapeName;
-            this.shapeType = shapeType;
-            totalShapes++;
-        }
-
         public string ShapeName
         {
             get { return this.shapeName; }
@@ -41,11 +29,24 @@ namespace Shape_Drawing_System
             return totalShapes;
         }
 
-        public void ShowDetails()
+        public Shape()
+        {
+            totalShapes++;
+        }
+
+        public Shape(string shapeName, string shapeType)
+        {
+            this.shapeName = shapeName;
+            this.shapeType = shapeType;
+            totalShapes++;
+        }
+
+        public virtual void ShowDetails()
         {
             Console.WriteLine("Shape Information:");
             Console.WriteLine("Shape Name: " + this.shapeName);
             Console.WriteLine("Shape Type: " + this.shapeType);
+            Console.WriteLine("Total Shapes: " + totalShapes);
         }
     }
 }

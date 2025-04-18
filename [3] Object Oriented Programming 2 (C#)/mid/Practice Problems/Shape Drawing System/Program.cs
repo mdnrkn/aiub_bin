@@ -15,12 +15,10 @@ namespace Shape_Drawing_System
             s1.ShapeName = "Simple Shape";
             s1.ShapeType = "Basic";
             s1.ShowDetails();
-            Console.WriteLine($"Total Shapes: {Shape.TotalShapes()}");
             Console.WriteLine();
 
             Shape s2 = new Shape("Advanced Shape", "Complex");
             s2.ShowDetails();
-            Console.WriteLine($"Total Shapes: {Shape.TotalShapes()}");
             Console.WriteLine();
 
             Console.WriteLine("Rectangle :");
@@ -33,7 +31,6 @@ namespace Shape_Drawing_System
             Console.WriteLine($"Is Square: {r1.IsSquare()}");
             Console.WriteLine($"Perimeter: {r1.GetPerimeter()}");
             Console.WriteLine(r1.GetPerimeter("cm"));
-            Console.WriteLine($"Total Shapes: {Shape.TotalShapes()}");
             Console.WriteLine();
 
             Rectangle r2 = new Rectangle("Perfect Square", "B", 4.0, 4.0);
@@ -41,7 +38,6 @@ namespace Shape_Drawing_System
             Console.WriteLine($"Is Square: {r2.IsSquare()}");
             Console.WriteLine($"Perimeter: {r2.GetPerimeter()}");
             Console.WriteLine(r2.GetPerimeter("m"));
-            Console.WriteLine($"Total Shapes: {Shape.TotalShapes()}");
             Console.WriteLine();
 
             Console.WriteLine("Circle :");
@@ -53,14 +49,12 @@ namespace Shape_Drawing_System
             c1.ShowDetails();
             Console.WriteLine($"Diameter: {c1.GetDiameter()}");
             Console.WriteLine($"Is Large Circle: {c1.IsLargeCircle()}");
-            Console.WriteLine($"Total Shapes: {Shape.TotalShapes()}");
             Console.WriteLine();
 
             Circle c2 = new Circle("Large Circle", "Round", 15.0, "Blue");
             c2.ShowDetails();
             Console.WriteLine($"Diameter: {c2.GetDiameter()}");
             Console.WriteLine($"Is Large Circle: {c2.IsLargeCircle()}");
-            Console.WriteLine($"Total Shapes: {Shape.TotalShapes()}");
         }
     }
 }

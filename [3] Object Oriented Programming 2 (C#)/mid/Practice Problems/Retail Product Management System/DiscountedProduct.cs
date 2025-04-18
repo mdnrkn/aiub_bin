@@ -6,21 +6,10 @@ using System.Threading.Tasks;
 
 namespace Retail_Product_Management_System
 {
-    public class DiscountedProduct:Product
+    public class DiscountedProduct : Product
     {
         private double discountPercent;
         private string category;
-
-        public DiscountedProduct():base()
-        {
-
-        }
-
-        public DiscountedProduct(int productId, string name, double price, double discountPercent, string category): base(productId, name, price)
-        {
-            this.discountPercent = discountPercent;
-            this.category = category;
-        }
 
         public double DiscountPercent
         {
@@ -34,7 +23,18 @@ namespace Retail_Product_Management_System
             set { this.category = value; }
         }
 
-        public void ShowDetails()
+        public DiscountedProduct() : base()
+        {
+
+        }
+
+        public DiscountedProduct(int productId, string name, double price, double discountPercent, string category) : base(productId, name, price)
+        {
+            this.discountPercent = discountPercent;
+            this.category = category;
+        }
+
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Discount Percent: " +this.discountPercent + "%");

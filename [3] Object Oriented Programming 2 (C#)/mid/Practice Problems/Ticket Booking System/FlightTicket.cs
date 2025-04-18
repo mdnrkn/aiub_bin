@@ -11,17 +11,6 @@ namespace Ticket_Booking_System
         private string seatClass;
         private double luggageWeight;
 
-        public FlightTicket() : base()
-        {
-
-        }
-
-        public FlightTicket(int ticketId, string passengerName, string seatClass, double luggageWeight) : base(ticketId, passengerName)
-        {
-            this.seatClass = seatClass;
-            this.luggageWeight = luggageWeight;
-        }
-
         public string SeatClass
         {
             get { return this.seatClass; }
@@ -32,6 +21,17 @@ namespace Ticket_Booking_System
         {
             get { return this.luggageWeight; }
             set { this.luggageWeight = value; }
+        }
+
+        public FlightTicket() : base()
+        {
+
+        }
+
+        public FlightTicket(int ticketId, string passengerName, string seatClass, double luggageWeight) : base(ticketId, passengerName)
+        {
+            this.seatClass = seatClass;
+            this.luggageWeight = luggageWeight;
         }
 
         public void ShowDetails()

@@ -6,20 +6,10 @@ using System.Threading.Tasks;
 
 namespace Shape_Drawing_System
 {
-    public class Rectangle:Shape
+    public class Rectangle : Shape
     {
         private double length;
         private double width;
-
-        public Rectangle():base()
-        {
-        }
-
-        public Rectangle(string shapeName, string shapeType, double length, double width) : base(shapeName, shapeType)
-        {
-            this.length = length;
-            this.width = width;
-        }
 
         public double Length
         {
@@ -33,7 +23,18 @@ namespace Shape_Drawing_System
             set { this.width = value; }
         }
 
-        public void ShowDetails()
+        public Rectangle() : base()
+        {
+
+        }
+
+        public Rectangle(string shapeName, string shapeType, double length, double width) : base(shapeName, shapeType)
+        {
+            this.length = length;
+            this.width = width;
+        }
+
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Length: " + this.length);
