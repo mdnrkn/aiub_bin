@@ -43,8 +43,8 @@ namespace Retail_Product_Management_System
 
         public double GetFinalPrice()
         {
-            double discount = price * (discountPercent / 100.0);
-            double priceAfterDiscount = price - discount;
+            double discount = this.price * (this.discountPercent / 100.0);
+            double priceAfterDiscount = this.price - discount;
             double vat = priceAfterDiscount * vatRate;
             return priceAfterDiscount + vat;
         }
