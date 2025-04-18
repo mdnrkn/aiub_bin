@@ -55,7 +55,7 @@ namespace Bank_Account_Management_System
 
         public bool CanWithdraw(double amount, double fee)
         {
-            if(amount <= this.balance + - fee + this.overdraftLimit)
+            if(amount <= this.balance - fee + this.overdraftLimit)
             {
                 return true;
             }
