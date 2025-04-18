@@ -51,7 +51,7 @@ namespace Retail_Product_Management_System
 
         public bool HasSeasonalOffer()
         {
-            if (category == "Festival" || category == "Winter")
+            if (this.category == "Festival" || this.category == "Winter")
             {
                 return true;
             }
