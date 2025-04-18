@@ -31,9 +31,10 @@ namespace Retail_Product_Management_System
             set { this.price = value; }
         }
 
-        public static double VatRate()
+        public static double VatRate
         {
-            return vatRate;
+            get { return vatRate; }
+            set { vatRate = value; }
         }
 
         public Product()

@@ -24,9 +24,10 @@ namespace Shape_Drawing_System
             set { this.shapeType = value; }
         }
 
-        public static int TotalShapes()
+        public static int TotalShapes
         {
-            return totalShapes;
+            get { return totalShapes; }
+            set { totalShapes = value; }
         }
 
         public Shape()

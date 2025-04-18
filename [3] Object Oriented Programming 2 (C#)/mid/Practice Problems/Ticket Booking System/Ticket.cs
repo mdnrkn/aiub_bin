@@ -24,9 +24,10 @@ namespace Ticket_Booking_System
             set { this.passengerName = value; }
         }
 
-        public static int TotalBookings()
+        public static int TotalBookings
         {
-            return totalBookings;
+            get { return totalBookings; }
+            set { totalBookings = value; }
         }
 
         public Ticket()

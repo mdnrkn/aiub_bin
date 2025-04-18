@@ -31,9 +31,10 @@ namespace Bank_Account_Management_System
             set { this.balance = value; }
         }
 
-        public static int TotalAccounts()
+        public static int TotalAccounts
         {
-            return totalAccounts;
+            get { return totalAccounts; }
+            set { totalAccounts = value; }
         }
 
         public BankAccount()
