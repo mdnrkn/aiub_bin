@@ -13,19 +13,6 @@ namespace Bank_Account_Management_System
         protected double balance;
         protected static int totalAccounts = 0;
 
-        public BankAccount()
-        {
-            totalAccounts++;
-        }
-
-        public BankAccount(int accountNumber, string holderName, double balance)
-        {
-            this.accountNumber = accountNumber;
-            this.holderName = holderName;
-            this.balance = balance;
-            totalAccounts++;
-        }
-
         public int AccountNumber
         {
             get { return this.accountNumber; }
@@ -44,6 +31,24 @@ namespace Bank_Account_Management_System
             set { this.balance = value; }
         }
 
+        public static int TotalAccounts()
+        {
+            return totalAccounts;
+        }
+
+        public BankAccount()
+        {
+            totalAccounts++;
+        }
+
+        public BankAccount(int accountNumber, string holderName, double balance)
+        {
+            this.accountNumber = accountNumber;
+            this.holderName = holderName;
+            this.balance = balance;
+            totalAccounts++;
+        }
+
         public virtual void ShowDetails()
         {
             Console.WriteLine("Account Information:");
@@ -51,11 +56,6 @@ namespace Bank_Account_Management_System
             Console.WriteLine("Holder Name: " + this.holderName);
             Console.WriteLine("Balance: " + this.balance);
             Console.WriteLine("Total Accounts: " + totalAccounts);
-        }
-
-        public static int TotalAccounts()
-        {
-            return totalAccounts;
         }
     }
 }

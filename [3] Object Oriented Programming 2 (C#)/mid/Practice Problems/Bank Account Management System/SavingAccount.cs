@@ -11,17 +11,6 @@ namespace Bank_Account_Management_System
         private double interestRate;
         private double minimumBalance;
 
-        public SavingAccount(): base()
-        {
-
-        }
-
-        public SavingAccount(int accountNumber, string holderName, double balance, double interestRate, double minimumBalance): base(accountNumber, holderName, balance)
-        {
-            this.interestRate = interestRate;
-            this.minimumBalance = minimumBalance;
-        }
-
         public double InterestRate
         {
             get { return this.interestRate; }
@@ -32,6 +21,17 @@ namespace Bank_Account_Management_System
         {
             get { return this.minimumBalance; }
             set { this.minimumBalance = value; }
+        }
+
+        public SavingAccount() : base()
+        {
+
+        }
+
+        public SavingAccount(int accountNumber, string holderName, double balance, double interestRate, double minimumBalance) : base(accountNumber, holderName, balance)
+        {
+            this.interestRate = interestRate;
+            this.minimumBalance = minimumBalance;
         }
 
         public override void ShowDetails()

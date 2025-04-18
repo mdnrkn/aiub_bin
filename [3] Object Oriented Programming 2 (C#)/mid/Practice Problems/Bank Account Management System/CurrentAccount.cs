@@ -11,17 +11,6 @@ namespace Bank_Account_Management_System
         private double overdraftLimit;
         private double transactionFee;
 
-        public CurrentAccount() : base()
-        {
-
-        }
-
-        public CurrentAccount(int accountNumber, string holderName, double balance, double overdraftLimit, double transactionFee): base(accountNumber, holderName, balance)
-        {
-            this.overdraftLimit = overdraftLimit;
-            this.transactionFee = transactionFee;
-        }
-
         public double OverdraftLimit
         {
             get { return this.overdraftLimit; }
@@ -32,6 +21,17 @@ namespace Bank_Account_Management_System
         {
             get { return this.transactionFee; }
             set { this.transactionFee = value; }
+        }
+
+        public CurrentAccount() : base()
+        {
+
+        }
+
+        public CurrentAccount(int accountNumber, string holderName, double balance, double overdraftLimit, double transactionFee) : base(accountNumber, holderName, balance)
+        {
+            this.overdraftLimit = overdraftLimit;
+            this.transactionFee = transactionFee;
         }
 
         public override void ShowDetail()
