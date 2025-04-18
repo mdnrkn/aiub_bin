@@ -34,7 +34,7 @@ namespace Bank_Account_Management_System
             this.transactionFee = transactionFee;
         }
 
-        public override void ShowDetail()
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Overdraft Limit: " + this.overdraftLimit);
