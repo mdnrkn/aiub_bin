@@ -42,7 +42,7 @@ namespace Ticket_Booking_System
             totalBookings++;
         }
 
-        public void ShowDetails()
+        public virtual void ShowDetails()
         {
             Console.WriteLine("Ticket Information:");
             Console.WriteLine("Ticket ID: " + this.ticketId);
