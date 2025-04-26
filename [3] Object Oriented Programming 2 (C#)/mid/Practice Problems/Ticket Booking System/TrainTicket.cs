@@ -34,7 +34,7 @@ namespace Ticket_Booking_System
             this.fare = fare;
         }
 
-        public void ShowDetails()
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Coach Type: " + this.coachType);

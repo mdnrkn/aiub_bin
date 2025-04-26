@@ -34,7 +34,7 @@ namespace Ticket_Booking_System
             this.luggageWeight = luggageWeight;
         }
 
-        public void ShowDetails()
+        public override void ShowDetails()
         {
             base.ShowDetails();
             Console.WriteLine("Seat Class: " + this.seatClass);
