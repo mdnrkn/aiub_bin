@@ -13,14 +13,14 @@ namespace Appliance_Energy_Monitoring_System
 
         public int BladeSize
         {
-            get { return bladeSize; }
-            set { bladeSize = value; }
+            get { return this.bladeSize; }
+            set { this.bladeSize = value; }
         }
 
         public int SpeedLevels
         {
-            get { return speedLevels; }
-            set { speedLevels = value; }
+            get { return this.speedLevels; }
+            set { this.speedLevels = value; }
         }
 
         public Fan() : base()
@@ -30,8 +30,8 @@ namespace Appliance_Energy_Monitoring_System
 
         public Fan(string applianceName, string brand, int bladeSize, int speedLevels) : base(applianceName, brand)
         {
-            BladeSize = bladeSize;
-            SpeedLevels = speedLevels;
+            this.bladeSize = bladeSize;
+            this.speedLevels = speedLevels;
         }
 
         public override void ShowDetails()

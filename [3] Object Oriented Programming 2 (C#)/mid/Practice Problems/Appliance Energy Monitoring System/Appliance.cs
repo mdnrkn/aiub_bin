@@ -14,14 +14,14 @@ namespace Appliance_Energy_Monitoring_System
 
         public string ApplianceName
         {
-            get { return applianceName; }
-            set { applianceName = value; }
+            get { return this.applianceName; }
+            set { this.applianceName = value; }
         }
 
         public string Brand
         {
-            get { return brand; }
-            set { brand = value; }
+            get { return this.brand; }
+            set { this.brand = value; }
         }
 
         public static double TotalEnergyUsed
@@ -46,7 +46,7 @@ namespace Appliance_Energy_Monitoring_System
             Console.WriteLine("Appliance Information : ");
             Console.WriteLine("Appliance: " + this.applianceName);
             Console.WriteLine("Brand: " + this.brand);
-            Console.WriteLine($"Total Energy Used: {TotalEnergyUsed} kWh");
+            Console.WriteLine($"Total Energy Used: {totalEnergyUsed} kWh");
         }
     }
 }

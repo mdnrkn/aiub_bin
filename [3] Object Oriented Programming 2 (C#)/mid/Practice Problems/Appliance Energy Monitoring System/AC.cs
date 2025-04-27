@@ -13,14 +13,14 @@ namespace Appliance_Energy_Monitoring_System
 
         public int Btu
         {
-            get { return btu; }
-            set { btu = value; }
+            get { return this.btu; }
+            set { this.btu = value; }
         }
 
         public int StarRating
         {
-            get { return starRating; }
-            set { starRating = value; }
+            get { return this.starRating; }
+            set { this.starRating = value; }
         }
 
         public AC() : base()
@@ -31,14 +31,14 @@ namespace Appliance_Energy_Monitoring_System
         public AC(string applianceName, string brand, int btu, int starRating) : base(applianceName, brand)
         {
             this.btu = btu;
-            this.StarRating = starRating;
+            this.starRating = starRating;
         }
 
         public override void ShowDetails()
         {
             base.ShowDetails();
-            Console.WriteLine($"Btu: " + this.btu);
-            Console.WriteLine($"Star Rating: " + this.StarRating);
+            Console.WriteLine("Btu: " + this.btu);
+            Console.WriteLine("Star Rating: " + this.starRating);
         }
 
         public double MonthlyElectricityCost(int hours)
@@ -49,13 +49,13 @@ namespace Appliance_Energy_Monitoring_System
         public double MonthlyElectricityCost(int hours, double unitCost)
         {
             double cost = this.btu * hours * unitCost;
-            TotalEnergyUsed += cost;
+            totalEnergyUsed += cost;
             return cost;
         }
 
         public bool IsEcoFriendly()
         {
-            if(StarRating >= 4)
+            if(this.starRating >= 4)
             {
                 return true;
             }
